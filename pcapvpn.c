@@ -107,6 +107,8 @@ do_tap(char *dev)
 
         fprintf(stderr, "Device: %s\n", ifr.ifr_name);
 
+        system("ifconfig tap0 up");
+
 #endif /* #ifdef __OpenBSD__ */
         
         /* Start receiving frames */
